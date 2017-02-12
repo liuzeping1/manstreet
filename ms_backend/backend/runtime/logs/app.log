@@ -1,0 +1,886 @@
+2017-02-11 14:33:16 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#5 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#6 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#11 F:\wamp\WWW\manstreet\exam\backend\controllers\LoginController.php(28): yii\db\ActiveQuery->one()
+#12 [internal function]: backend\controllers\LoginController->actionAdd()
+#13 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#15 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#16 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#17 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#9 F:\wamp\WWW\manstreet\exam\backend\controllers\LoginController.php(28): yii\db\ActiveQuery->one()
+#10 [internal function]: backend\controllers\LoginController->actionAdd()
+#11 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-02-11 14:33:15 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/add'
+]
+
+$_POST = [
+    'username' => 'admin'
+    'password' => '123456'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2024'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=login/add'
+    'QUERY_STRING' => 'r=login/add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61845'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'CONTENT_LENGTH' => '30'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=login/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486794795.694
+    'REQUEST_TIME' => 1486794795
+]
+2017-02-11 14:34:07 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: username' in F:\wamp\WWW\manstreet\exam\backend\controllers\LoginController.php:26
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\backend\controllers\LoginController.php(26): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'F:\\wamp\\WWW\\man...', 26, Array)
+#1 [internal function]: backend\controllers\LoginController->actionAdd()
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#5 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('login/add', Array)
+#6 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2017-02-11 14:34:07 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/add'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2024'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=login/add'
+    'QUERY_STRING' => 'r=login/add'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '61852'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486794847.1401
+    'REQUEST_TIME' => 1486794847
+]
+2017-02-11 14:46:16 [::1][-][vu64m233ajchksuqpaj5kc0mk7][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in F:\wamp\WWW\manstreet\exam\backend\controllers\CommonController.php:65
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('role', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('rbac/role', Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-11 14:46:15 [::1][-][vu64m233ajchksuqpaj5kc0mk7][info][application] $_GET = [
+    'r' => 'rbac/role'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '4'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2024'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=rbac%2Frole'
+    'QUERY_STRING' => 'r=rbac%2Frole'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62085'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795575.1678
+    'REQUEST_TIME' => 1486795575
+]
+2017-02-11 15:22:42 [::1][-][vu64m233ajchksuqpaj5kc0mk7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: login/loginout' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('loginout', Array)
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('login/loginout', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-11 15:22:42 [::1][-][vu64m233ajchksuqpaj5kc0mk7][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '4'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62296'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486797762.3145
+    'REQUEST_TIME' => 1486797762
+]
+2017-02-11 15:22:57 [::1][-][vu64m233ajchksuqpaj5kc0mk7][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in F:\wamp\WWW\manstreet\exam\backend\controllers\CommonController.php:70
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/index', Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-11 15:22:56 [::1][-][vu64m233ajchksuqpaj5kc0mk7][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62299'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=login/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486797776.7652
+    'REQUEST_TIME' => 1486797776
+]
+2017-02-11 15:24:31 [::1][-][vu64m233ajchksuqpaj5kc0mk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'man_street.user' doesn't exist' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\wamp\WWW\manstreet\exam\backend\controllers\RbacController.php(96): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\RbacController->actionFenpei()
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'man_street.user' doesn't exist
+The SQL being executed was: select id,username from  user' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'select id,usern...')
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 F:\wamp\WWW\manstreet\exam\backend\controllers\RbacController.php(96): yii\db\Command->queryAll()
+#3 [internal function]: backend\controllers\RbacController->actionFenpei()
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#5 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#6 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#7 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#8 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'man_street.user' doesn't exist
+)
+
+2017-02-11 15:24:30 [::1][-][vu64m233ajchksuqpaj5kc0mk7][info][application] $_GET = [
+    'r' => 'rbac/fenpei'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '3'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=rbac%2Ffenpei'
+    'QUERY_STRING' => 'r=rbac%2Ffenpei'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62322'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=rbac%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486797870.5275
+    'REQUEST_TIME' => 1486797870
+]
+2017-02-11 15:25:56 [::1][-][vu64m233ajchksuqpaj5kc0mk7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: login/loginout' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('loginout', Array)
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('login/loginout', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-11 15:25:56 [::1][-][vu64m233ajchksuqpaj5kc0mk7][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'vu64m233ajchksuqpaj5kc0mk7'
+    '_csrf-backend' => '4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"51zJ2Zsq61Ok7tX_RxWodNaxctBU45tO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '3'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62334'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=vu64m233ajchksuqpaj5kc0mk7; _csrf-backend=4cc116f639a37808a194e235b4adf94ce8d18c5e364939fdf13348fffdff2abda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2251zJ2Zsq61Ok7tX_RxWodNaxctBU45tO%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=rbac/role'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486797955.9948
+    'REQUEST_TIME' => 1486797955
+]
+2017-02-11 16:03:32 [::1][-][29bg5krt265s86h8tjmc0lq470][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in F:\wamp\WWW\manstreet\exam\backend\controllers\CommonController.php:70
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/index', Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-11 16:03:31 [::1][-][29bg5krt265s86h8tjmc0lq470][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => '29bg5krt265s86h8tjmc0lq470'
+    '_csrf-backend' => 'd49292f1b2c1475e62e43cf40e19127857f32ab233a3f9ef5f37f3630fb24dd3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"lXuF1H3AkqDfEBwD8Bj3HK1TVOVibAQl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63559'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=29bg5krt265s86h8tjmc0lq470; _csrf-backend=d49292f1b2c1475e62e43cf40e19127857f32ab233a3f9ef5f37f3630fb24dd3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22lXuF1H3AkqDfEBwD8Bj3HK1TVOVibAQl%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486800211.7904
+    'REQUEST_TIME' => 1486800211
+]
+2017-02-12 19:00:12 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in F:\wamp\WWW\manstreet\exam\backend\controllers\CommonController.php:70
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/index', Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-12 19:00:11 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => '1lc09dh5fcfut8ne389nhcs4i0'
+    '_csrf-backend' => '2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1868'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49463'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=1lc09dh5fcfut8ne389nhcs4i0; _csrf-backend=2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486897211.2104
+    'REQUEST_TIME' => 1486897211
+]
+2017-02-12 19:08:57 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in F:\wamp\WWW\manstreet\exam\backend\views\bowen\index.php:41
+Stack trace:
+#0 F:\wamp\WWW\manstreet\exam\backend\views\bowen\index.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'F:\\wamp\\WWW\\man...', 41, Array)
+#1 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\View.php(326): require('F:\\wamp\\WWW\\man...')
+#2 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('F:\\wamp\\WWW\\man...', Array)
+#3 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('F:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#4 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\BowenController))
+#5 F:\wamp\WWW\manstreet\exam\backend\controllers\BowenController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\BowenController->actionIndex()
+#7 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/index', Array)
+#11 F:\wamp\WWW\manstreet\exam\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\wamp\WWW\manstreet\exam\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-02-12 19:08:56 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][info][application] $_GET = [
+    'r' => 'bowen/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => '1lc09dh5fcfut8ne389nhcs4i0'
+    '_csrf-backend' => '2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '6'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '624'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=bowen%2Findex'
+    'QUERY_STRING' => 'r=bowen%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49795'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=1lc09dh5fcfut8ne389nhcs4i0; _csrf-backend=2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486897736.6749
+    'REQUEST_TIME' => 1486897736
+]
+2017-02-12 19:11:51 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Bowen' not found' in F:\wamp\WWW\manstreet\exam\backend\controllers\RecycleController.php:22
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-12 19:11:50 [::1][-][1lc09dh5fcfut8ne389nhcs4i0][info][application] $_GET = [
+    'r' => 'recycle/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => '1lc09dh5fcfut8ne389nhcs4i0'
+    '_csrf-backend' => '2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/exam/backend/web/'
+    'admin' => '6'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '624'
+    'SCRIPT_NAME' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/exam/backend/web/index.php?r=recycle%2Findex'
+    'QUERY_STRING' => 'r=recycle%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49946'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/exam/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=1lc09dh5fcfut8ne389nhcs4i0; _csrf-backend=2f8f504c31c6989bb7c7e4e885f5cd109ef52cabd0d2fbb5e9d027a3d289b114a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22_D3H6w3yeUwhHLV2XdR_uaRqulNvlODr%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/exam/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/exam/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486897910.8252
+    'REQUEST_TIME' => 1486897910
+]
