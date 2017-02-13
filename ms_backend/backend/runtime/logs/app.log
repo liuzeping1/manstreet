@@ -884,3 +884,2434 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486897910.8252
     'REQUEST_TIME' => 1486897910
 ]
+2017-02-14 04:42:27 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#11 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php(37): yii\db\ActiveQuery->one()
+#12 [internal function]: backend\controllers\LoginController->actionAdd()
+#13 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#14 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#15 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#16 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#17 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php(37): yii\db\ActiveQuery->one()
+#10 [internal function]: backend\controllers\LoginController->actionAdd()
+#11 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#12 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#13 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#14 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#15 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2017-02-14 04:42:26 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/add'
+]
+
+$_POST = [
+    'username' => 'zhaoteng'
+    'password' => '123456'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/add'
+    'QUERY_STRING' => 'r=login/add'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63341'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '33'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=login/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018546.0156
+    'REQUEST_TIME' => 1487018546
+]
+2017-02-14 04:43:07 [::1][-][uoj66b4pg92rcl244ndrf38h51][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: login/loginout' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('loginout', Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('login/loginout', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-14 04:43:07 [::1][-][uoj66b4pg92rcl244ndrf38h51][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63377'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018587.0633
+    'REQUEST_TIME' => 1487018587
+]
+2017-02-14 04:45:45 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:45:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63500'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018745.2082
+    'REQUEST_TIME' => 1487018745
+]
+2017-02-14 04:47:00 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:46:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63573'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018819.9684
+    'REQUEST_TIME' => 1487018819
+]
+2017-02-14 04:47:48 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:47:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63630'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018868.6199
+    'REQUEST_TIME' => 1487018868
+]
+2017-02-14 04:49:19 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:49:19 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1908'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63659'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487018959.0289
+    'REQUEST_TIME' => 1487018959
+]
+2017-02-14 04:50:02 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:50:02 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63669'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019002.4755
+    'REQUEST_TIME' => 1487019002
+]
+2017-02-14 04:52:12 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:52:12 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63690'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019132.652
+    'REQUEST_TIME' => 1487019132
+]
+2017-02-14 04:53:03 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:53:03 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63708'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019183.9521
+    'REQUEST_TIME' => 1487019183
+]
+2017-02-14 04:53:37 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:53:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63731'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019217.4395
+    'REQUEST_TIME' => 1487019217
+]
+2017-02-14 04:55:18 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 04:55:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2040'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63770'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019318.3969
+    'REQUEST_TIME' => 1487019318
+]
+2017-02-14 05:02:24 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:02:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63968'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019744.2771
+    'REQUEST_TIME' => 1487019744
+]
+2017-02-14 05:02:59 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:02:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '63984'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=rbac%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019779.8437
+    'REQUEST_TIME' => 1487019779
+]
+2017-02-14 05:04:51 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:04:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64027'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=rbac%2Flist'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487019891.1693
+    'REQUEST_TIME' => 1487019891
+]
+2017-02-14 05:07:57 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:07:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64065'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020077.9448
+    'REQUEST_TIME' => 1487020077
+]
+2017-02-14 05:09:00 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:09:00 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64077'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020139.999
+    'REQUEST_TIME' => 1487020139
+]
+2017-02-14 05:09:12 [::1][-][uoj66b4pg92rcl244ndrf38h51][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: index/logout' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logout', Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/logout', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-14 05:09:12 [::1][-][uoj66b4pg92rcl244ndrf38h51][info][application] $_GET = [
+    'r' => 'index/logout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1484640519769'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798290'
+    'advanced-backend' => 'uoj66b4pg92rcl244ndrf38h51'
+    '_csrf-backend' => '78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=index/logout'
+    'QUERY_STRING' => 'r=index/logout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64085'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'bdshare_firstime=1484640519769; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798290; advanced-backend=uoj66b4pg92rcl244ndrf38h51; _csrf-backend=78f508434543405a084a91f59cbfcf157d88ad4e6a6ba9f8759685237312271aa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rPQVInxjtbAtBpkywGfFsHaCX_jgW5x_%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020152.47
+    'REQUEST_TIME' => 1487020152
+]
+2017-02-14 05:11:23 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:11:23 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1482877294119'
+    'style' => 'styles2'
+    'pgv_pvi' => '590179328'
+    'Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753' => '1486798574'
+    '_csrf-backend' => '3405d3075672de3d2b28dc2c791380ba6b6db095c0e6c20be2255d796bfaaff4a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"z2rpTxMBfAFbwm5qeIKMpKtiZZrg0UsO\";}'
+    'advanced-backend' => 'htnfvrjqi18tghc1brp3f5mbe4'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1888'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64209'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_COOKIE' => 'bdshare_firstime=1482877294119; style=styles2; pgv_pvi=590179328; Hm_lvt_6be5d9ad9bf2806c2bc65c7388cd2753=1486798574; _csrf-backend=3405d3075672de3d2b28dc2c791380ba6b6db095c0e6c20be2255d796bfaaff4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22z2rpTxMBfAFbwm5qeIKMpKtiZZrg0UsO%22%3B%7D; advanced-backend=htnfvrjqi18tghc1brp3f5mbe4'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020283.7984
+    'REQUEST_TIME' => 1487020283
+]
+2017-02-14 05:12:01 [::1][-][akfspela1c14kc9saj2fecceg5][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\CommonController.php:70
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/index', Array)
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-14 05:12:00 [::1][-][akfspela1c14kc9saj2fecceg5][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64231'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020320.4839
+    'REQUEST_TIME' => 1487020320
+]
+2017-02-14 05:12:48 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:12:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'akfspela1c14kc9saj2fecceg5'
+    '_csrf-backend' => '87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4x7lT7Kx2axyyVPzeFenSqbroY6bsQo7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64243'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=akfspela1c14kc9saj2fecceg5; _csrf-backend=87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224x7lT7Kx2axyyVPzeFenSqbroY6bsQo7%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020368.0419
+    'REQUEST_TIME' => 1487020368
+]
+2017-02-14 05:12:55 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:12:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'akfspela1c14kc9saj2fecceg5'
+    '_csrf-backend' => '87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4x7lT7Kx2axyyVPzeFenSqbroY6bsQo7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64287'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=akfspela1c14kc9saj2fecceg5; _csrf-backend=87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224x7lT7Kx2axyyVPzeFenSqbroY6bsQo7%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020375.5208
+    'REQUEST_TIME' => 1487020375
+]
+2017-02-14 05:18:31 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Yii' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\LoginController.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 05:18:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'login/loginout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'akfspela1c14kc9saj2fecceg5'
+    '_csrf-backend' => '87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"4x7lT7Kx2axyyVPzeFenSqbroY6bsQo7\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=login/loginout'
+    'QUERY_STRING' => 'r=login/loginout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64324'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=akfspela1c14kc9saj2fecceg5; _csrf-backend=87badda08c5298546e2b3eb0479f673d909d0ff9f530b95e0ea62f5628ba741da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%224x7lT7Kx2axyyVPzeFenSqbroY6bsQo7%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020711.6556
+    'REQUEST_TIME' => 1487020711
+]
+2017-02-14 05:23:17 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\web\HttpException:401] exception 'yii\web\UnauthorizedHttpException' with message '对不起，您现在还没获此操作的权限' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\CommonController.php:65
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(152): backend\controllers\CommonController->beforeAction(Object(yii\base\InlineAction))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('logout', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('index/logout', Array)
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-02-14 05:23:16 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'index/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=index/logout'
+    'QUERY_STRING' => 'r=index/logout'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64457'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487020996.8816
+    'REQUEST_TIME' => 1487020996
+]
+2017-02-14 05:24:08 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php:41
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\wamp\\WWW\\man...', 41, Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(326): require('D:\\wamp\\WWW\\man...')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\wamp\\WWW\\man...', Array)
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\BowenController))
+#5 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\BowenController->actionIndex()
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/index', Array)
+#11 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-02-14 05:24:07 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Findex'
+    'QUERY_STRING' => 'r=bowen%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64480'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=index/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021047.6341
+    'REQUEST_TIME' => 1487021047
+]
+2017-02-14 05:28:14 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php:41
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\wamp\\WWW\\man...', 41, Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(326): require('D:\\wamp\\WWW\\man...')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\wamp\\WWW\\man...', Array)
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\BowenController))
+#5 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(25): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\BowenController->actionIndex()
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/index', Array)
+#11 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-02-14 05:28:13 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2020'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Findex'
+    'QUERY_STRING' => 'r=bowen%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64607'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=classification%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021293.3199
+    'REQUEST_TIME' => 1487021293
+]
+2017-02-14 05:30:20 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: bowen/bowen' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('bowen', Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/bowen', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-14 05:30:20 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/bowen'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fbowen'
+    'QUERY_STRING' => 'r=bowen%2Fbowen'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64626'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=classification%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021420.7652
+    'REQUEST_TIME' => 1487021420
+]
+2017-02-14 05:31:38 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\bowen/bowen.php' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('bowen/bowen', Array, Object(backend\controllers\BowenController))
+#2 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(22): yii\base\Controller->render('bowen/bowen')
+#3 [internal function]: backend\controllers\BowenController->actionAdd()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/add', Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-02-14 05:31:37 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'QUERY_STRING' => 'r=bowen%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64644'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=classification%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021497.5931
+    'REQUEST_TIME' => 1487021497
+]
+2017-02-14 05:32:36 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\bowen/bowen.php' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('bowen/bowen', Array, Object(backend\controllers\BowenController))
+#2 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(22): yii\base\Controller->render('bowen/bowen')
+#3 [internal function]: backend\controllers\BowenController->actionAdd()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/add', Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-02-14 05:32:35 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'QUERY_STRING' => 'r=bowen%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64659'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021555.8433
+    'REQUEST_TIME' => 1487021555
+]
+2017-02-14 05:33:27 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\bowen/bowen.php' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('bowen/bowen', Array, Object(backend\controllers\BowenController))
+#2 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(22): yii\base\Controller->render('bowen/bowen')
+#3 [internal function]: backend\controllers\BowenController->actionAdd()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/add', Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-02-14 05:33:25 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'QUERY_STRING' => 'r=bowen%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64669'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021605.9412
+    'REQUEST_TIME' => 1487021605
+]
+2017-02-14 05:33:50 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\bowen/bowen.php' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('bowen/bowen', Array, Object(backend\controllers\BowenController))
+#2 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(22): yii\base\Controller->render('bowen/bowen')
+#3 [internal function]: backend\controllers\BowenController->actionAdd()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/add', Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-02-14 05:33:49 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'QUERY_STRING' => 'r=bowen%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64677'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021629.6567
+    'REQUEST_TIME' => 1487021629
+]
+2017-02-14 05:34:17 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: D:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\bowen/bowen.php' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('bowen/bowen', Array, Object(backend\controllers\BowenController))
+#2 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(22): yii\base\Controller->render('bowen/bowen')
+#3 [internal function]: backend\controllers\BowenController->actionAdd()
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('add', Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/add', Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2017-02-14 05:34:16 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/add'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1988'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'QUERY_STRING' => 'r=bowen%2Fadd'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '64684'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=classification%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487021656.8332
+    'REQUEST_TIME' => 1487021656
+]
+2017-02-14 06:04:00 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'is_show' cannot be null' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(36): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\BowenController->actionAddfrom()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'is_show' cannot be null
+The SQL being executed was: INSERT INTO `man_article` (`title`, `content`, `author`, `is_show`, `add_time`, `description`) VALUES ('人为什么要活着！', '萨达看哈老师看到萨克雷就打萨科技大厦库连接大叔控撒离开家奥斯卡了暗示健康静安寺卡上犒劳三军卡死机打开静安寺卡德加ask啊所涉及的阿克苏大当家撒娇ask的撒阿昆的', '泽平', NULL, 2017, '看了看撒娇的了卡萨角度看撒娇的看撒娇卡三季度撒')' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ma...')
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(36): yii\db\Command->execute()
+#2 [internal function]: backend\controllers\BowenController->actionAddfrom()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#4 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#5 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'is_show' cannot be null
+)
+
+2017-02-14 06:03:59 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/addfrom'
+]
+
+$_POST = [
+    'title' => '人为什么要活着！'
+    'author' => '泽平'
+    'is_show' => ''
+    'description' => '看了看撒娇的了卡萨角度看撒娇的看撒娇卡三季度撒'
+    'content' => '萨达看哈老师看到萨克雷就打萨科技大厦库连接大叔控撒离开家奥斯卡了暗示健康静安寺卡上犒劳三军卡死机打开静安寺卡德加ask啊所涉及的阿克苏大当家撒娇ask的撒阿昆的'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2008'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen/addfrom'
+    'QUERY_STRING' => 'r=bowen/addfrom'
+    'REQUEST_METHOD' => 'POST'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '65357'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'CONTENT_LENGTH' => '1014'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487023439.6695
+    'REQUEST_TIME' => 1487023439
+]
+2017-02-14 06:55:36 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: bowen/index' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/index', Array)
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-14 06:55:36 [::1][-][fg3ic9ehllv5vbq4n805qa09r6][info][application] $_GET = [
+    'r' => 'bowen/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Findex'
+    'QUERY_STRING' => 'r=bowen%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49441'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487026536.4864
+    'REQUEST_TIME' => 1487026536
+]
+2017-02-14 07:19:45 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\Query' not found' in D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php:49
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-14 07:19:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/show'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fshow'
+    'QUERY_STRING' => 'r=bowen%2Fshow'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '49716'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487027985.2908
+    'REQUEST_TIME' => 1487027985
+]
+2017-02-14 09:31:22 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uname' in 'where clause'' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(396): yii\db\Command->queryScalar()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(303): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(58): yii\db\Query->count()
+#5 [internal function]: backend\controllers\BowenController->actionShow()
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'uname' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `man_article` WHERE `uname`='人为什么'' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Schema.php:631
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(396): yii\db\Command->queryScalar()
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(303): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(58): yii\db\Query->count()
+#5 [internal function]: backend\controllers\BowenController->actionShow()
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'uname' in 'where clause'
+)
+
+2017-02-14 09:31:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/show'
+    'uname' => '人为什么'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1896'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fshow&uname=%E4%BA%BA%E4%B8%BA%E4%BB%80%E4%B9%88'
+    'QUERY_STRING' => 'r=bowen%2Fshow&uname=%E4%BA%BA%E4%B8%BA%E4%BB%80%E4%B9%88'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '50368'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fshow&page=1&per-page=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487035881.8329
+    'REQUEST_TIME' => 1487035881
+]
+2017-02-14 10:15:16 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php:327
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(327): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'D:\\wamp\\WWW\\man...', 327, Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Command->bindValues('21')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(128): yii\db\Connection->createCommand('SELECT * FROM `...', '21')
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Query->createCommand(NULL)
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(91): yii\db\Query->one()
+#5 [internal function]: backend\controllers\BowenController->actionFind()
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('find', Array)
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/find', Array)
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-02-14 10:15:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/find'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen/find&id=21'
+    'QUERY_STRING' => 'r=bowen/find&id=21'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51195'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fshow'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487038516.5301
+    'REQUEST_TIME' => 1487038516
+]
+2017-02-14 10:15:57 [::1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php:327
+Stack trace:
+#0 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Command.php(327): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'D:\\wamp\\WWW\\man...', 327, Array)
+#1 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Command->bindValues('21')
+#2 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(128): yii\db\Connection->createCommand('SELECT * FROM `...', '21')
+#3 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Query->createCommand(NULL)
+#4 D:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(91): yii\db\Query->one()
+#5 [internal function]: backend\controllers\BowenController->actionFind()
+#6 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('find', Array)
+#9 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/find', Array)
+#10 D:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-02-14 10:15:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/find'
+    'id' => '21'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'fg3ic9ehllv5vbq4n805qa09r6'
+    '_csrf-backend' => '86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"sCs4-paGqczsRT1c6wmy22Lu7rH11HkU\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/manstreet/ms_backend/backend/web/'
+    'admin' => '5'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;c:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\sssss\\bin;C:\\ProgramData\\ComposerSetup\\bin;D:\\Dia\\Git\\cmd;D:\\Dia\\bin;D:\\wamp\\php55n;P:\\node.js\\;P:\\AE\\QTSystem\\;C:\\Users\\dell\\AppData\\Roaming\\Composer\\vendor\\bin;C:/Python27;C:\\Users\\dell\\AppData\\Roaming\\npm'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/wamp/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1948'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen/find&id=21'
+    'QUERY_STRING' => 'r=bowen/find&id=21'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '51206'
+    'SCRIPT_FILENAME' => 'D:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'advanced-backend=fg3ic9ehllv5vbq4n805qa09r6; _csrf-backend=86c181ff3cf2a1884e63df2623f12a3055a387b7a166a1293521f75c25a0e051a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22sCs4-paGqczsRT1c6wmy22Lu7rH11HkU%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=bowen%2Fshow'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1487038557.2152
+    'REQUEST_TIME' => 1487038557
+]

@@ -15,14 +15,15 @@
 <div class="panel admin-panel">
     <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
     <div class="body-content">
-        <form method="post" class="form-x" action="?r=bowen/addfrom">
+        <form method="post" class="form-x" action="?r=bowen/update">
+            <input type="hidden" name="art_id" value="<?php echo $res['art_id']?>"/>
 
             <div class="form-group">
                 <div class="label">
                     <label>文章标题：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input w50" value="" name="title" data-validate="required:请输入标题" />
+                    <input type="text" class="input w50" value="<?php echo $res['title']?>" name="title" data-validate="required:请输入标题" />
                     <div class="tips"></div>
                 </div>
             </div>
@@ -33,7 +34,7 @@
                     <label>文章作者：</label>
                 </div>
                 <div class="field">
-                    <input type="text" class="input w50" value="" name="author" data-validate="required:请输入作者" />
+                    <input type="text" class="input w50" value="<?php echo $res['author']?>" name="author" data-validate="required:请输入作者" />
                     <div class="tips"></div>
                 </div>
             </div>
@@ -53,7 +54,7 @@
                     <label>文章描述：</label>
                 </div>
                 <div class="field">
-                    <textarea class="input" name="description" style=" height:50px;"></textarea>
+                    <textarea class="input" name="description" style=" height:50px;" value="<?php echo $res['description']?>"></textarea>
                     <div class="tips"></div>
                 </div>
             </div>
@@ -62,17 +63,17 @@
                     <label>文章内容：</label>
                 </div>
                 <div class="field">
-                    <textarea name="content" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
+                    <textarea name="content" value="<?php echo $res['content']?>" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
                     <div class="tips"></div>
                 </div>
             </div>
 
-                <div class="field">
-                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
-                </div>
+            <div class="field">
+                <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
             </div>
-        </form>
     </div>
+    </form>
+</div>
 </div>
 
 </body></html>
