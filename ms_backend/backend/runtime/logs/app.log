@@ -2164,3 +2164,83 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486984653.827
     'REQUEST_TIME' => 1486984653
 ]
+2017-02-13 19:44:22 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in F:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php:41
+Stack trace:
+#0 F:\wamp\WWW\manstreet\ms_backend\backend\views\bowen\index.php(41): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'F:\\wamp\\WWW\\man...', 41, Array)
+#1 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(326): require('F:\\wamp\\WWW\\man...')
+#2 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('F:\\wamp\\WWW\\man...', Array)
+#3 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('F:\\wamp\\WWW\\man...', Array, Object(backend\controllers\BowenController))
+#4 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\BowenController))
+#5 F:\wamp\WWW\manstreet\ms_backend\backend\controllers\BowenController.php(24): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\BowenController->actionIndex()
+#7 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#10 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('bowen/index', Array)
+#11 F:\wamp\WWW\manstreet\ms_backend\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 F:\wamp\WWW\manstreet\ms_backend\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-02-13 19:44:21 [::1][-][-][info][application] $_GET = [
+    'r' => 'bowen/index'
+]
+
+$_COOKIE = [
+    '_trs_uv' => '6e3_6_ixwm9nxu'
+    '_trs_ua_s_1' => '95e_6_ixwm9nxr'
+    'f818557f7f4ba5b8fd6b85e1a596bced' => '793ff8c70ecda2851ba36b253799a4003b664495s:163:\"d24176bbe23a72bfd7cfd43e8beb24313872b024a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'language' => 'zh_CN'
+    '1_product' => 'c0ea282dc874e295ff2335b8af9843af7d046c6bs:1:\"1\";'
+    'a0acf457901e8a013c08a0d94363baa6' => 'ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s:163:\"1d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a:4:{i:0;s:1:\"1\";i:1;s:5:\"admin\";i:2;i:2592000;i:3;a:2:{s:8:\"realname\";s:15:\"系统管理员\";s:8:\"username\";s:5:\"admin\";}}\";'
+    'pageSize' => '0cd89bf75dab19cc28c62ccd244de81da73001ccs:2:\"20\";'
+    'currency' => 'CNY'
+    'advanced-backend' => 'rsluhvioureqr51pkm3c8p2rk6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'admin' => '6'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Lenovo\\Motion Control\\;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;E:\\软件\\svn\\bin;F;\\wamp\\php\\php-5.4.45;C:\\ProgramData\\ComposerSetup\\bin;F:\\wamp\\php55n;\\Program Files\\TortoiseGit\\bin;E:\\软件\\Git\\TortoiseGit\\bin;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/wamp/php56n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2028'
+    'SCRIPT_NAME' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_URI' => '/manstreet/ms_backend/backend/web/index.php?r=bowen%2Findex'
+    'QUERY_STRING' => 'r=bowen%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '62111'
+    'SCRIPT_FILENAME' => 'F:/wamp/WWW/manstreet/ms_backend/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'F:/wamp/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\windows'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => '_trs_uv=6e3_6_ixwm9nxu; _trs_ua_s_1=95e_6_ixwm9nxr; f818557f7f4ba5b8fd6b85e1a596bced=793ff8c70ecda2851ba36b253799a4003b664495s%3A163%3A%22d24176bbe23a72bfd7cfd43e8beb24313872b024a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; language=zh_CN; 1_product=c0ea282dc874e295ff2335b8af9843af7d046c6bs%3A1%3A%221%22%3B; a0acf457901e8a013c08a0d94363baa6=ab1d2c2bcb1b44bd977013aaa634b5be99dffcb5s%3A163%3A%221d662b4e8ab5a706c6b7d5a98d1f7d326fc2ad18a%3A4%3A%7Bi%3A0%3Bs%3A1%3A%221%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3Bi%3A2%3Bi%3A2592000%3Bi%3A3%3Ba%3A2%3A%7Bs%3A8%3A%22realname%22%3Bs%3A15%3A%22%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86%E5%91%98%22%3Bs%3A8%3A%22username%22%3Bs%3A5%3A%22admin%22%3B%7D%7D%22%3B; pageSize=0cd89bf75dab19cc28c62ccd244de81da73001ccs%3A2%3A%2220%22%3B; currency=CNY; advanced-backend=rsluhvioureqr51pkm3c8p2rk6'
+    'HTTP_REFERER' => 'http://localhost/manstreet/ms_backend/backend/web/index.php?r=users%2Fadd'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_HOST' => 'localhost'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/manstreet/ms_backend/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1486986260.9893
+    'REQUEST_TIME' => 1486986260
+]
