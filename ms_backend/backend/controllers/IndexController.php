@@ -18,10 +18,4 @@ class IndexController extends CommonController
     {
         return $this->render('index');
     }
-
-    public function actionLogout()
-    {
-        unset($_SESSION['admin']);
-        echo "<script>alert('退出成功');location.href='?r=login/index'</script>script>";
-    }
 }

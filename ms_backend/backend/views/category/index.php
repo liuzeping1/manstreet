@@ -31,9 +31,8 @@
                 <div class="field">
 
                     <select name="f_id" >
-                        <?php foreach ($name as $k=>$v){?>
-                            <option value="<?php echo $v['cat_id']?>"><?php echo $v['cat_name']?></option>
-                        <?php }?>
+
+                            <option value=""></option>
                     </select>
 
                     <div class="tips"></div>
