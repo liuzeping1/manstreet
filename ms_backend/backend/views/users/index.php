@@ -35,8 +35,6 @@ use yii\base;
                 echo '搜索：'.Html::input('text','user_name');
                 echo Html::submitButton('搜索');
                 echo '<br />';
-                echo '<br />';
-
                 ActiveForm::end();
 
                 ?>
