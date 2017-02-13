@@ -2,7 +2,6 @@
 namespace backend\controllers;
 use yii\web\Controller;
 use yii\data\Pagination;
-use app\models\Fication;
 use app\models\Man_goods;
 use app\models\Man_category;
 use yii\web\UploadedFile;

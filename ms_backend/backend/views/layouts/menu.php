@@ -35,9 +35,8 @@ use yii\helpers\Url;
     </ul>
     <h2><span class="icon-pencil-square-o"></span>会员管理</h2>
     <ul style="display:none">
-
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>会员展示</a></li>
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>会员添加</a></li>
+        <li><a href="<?php echo Url::toRoute(['users/index']);?>"><span class="icon-caret-right"></span>会员展示</a></li>
+        <li><a href="<?php echo Url::toRoute(['users/add']);?>"><span class="icon-caret-right"></span>会员添加</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>订单管理</h2>
     <ul style="display:none">
