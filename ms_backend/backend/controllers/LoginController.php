@@ -1,5 +1,6 @@
 <?php
 namespace backend\controllers;
+header("content-type:text/html;charset=utf-8");
 use yii\web\Controller;
 use yii\data\Pagination;
 use yii\web\UploadedFile;
@@ -25,6 +26,14 @@ class LoginController extends Controller
             $login=new Man_admin();
             $username=trim($re['username']);
             $password_hash=md5($re['password']);
+            if($username =="")
+            {
+                echo "<script>alert('登录失败'); history.go(-1)</script>";die;
+            }
+            if($password_hash =="")
+            {
+                echo "<script>alert('登录失败'); history.go(-1)</script>";die;
+            }
             $list=$login->find()->where(['username'=>$username])->asArray()->one();
             if($password_hash==$list['password'])
             {
@@ -50,5 +59,11 @@ class LoginController extends Controller
         $data['pormpt'] = '登录失败';
         $data['waitSecond'] = '3';
         return $this->render('error',$data);
+    }
+
+    public function actionLoginout()
+    {
+        unset(Yii::$app->session['admin']);
+        echo "<script>alert('退出成功');location.href='?r=login/index'</script>script>";
     }
 }
