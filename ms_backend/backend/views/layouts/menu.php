@@ -70,14 +70,13 @@ use yii\helpers\Url;
     <h2><span class="icon-pencil-square-o"></span>活动管理</h2>
     <ul style="display:none">
 
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>活动列表</a></li>
-        <li><a href="<?php echo Url::toRoute(['classification/add']);?>"><span class="icon-caret-right"></span>添加活动</a></li>
+        <li><a href="<?php echo Url::toRoute(['activity/index']);?>"><span class="icon-caret-right"></span>活动列表</a></li>
+        <li><a href="<?php echo Url::toRoute(['activity/add']);?>"><span class="icon-caret-right"></span>添加活动</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>评论管理</h2>
     <ul style="display:none">
 
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>已审核评论</a></li>
-        <li><a href="<?php echo Url::toRoute(['classification/add']);?>"><span class="icon-caret-right"></span>未审核评论</a></li>
+        <li><a href="?r=comment/index&status=2&keywords="><span class="icon-caret-right"></span>评论列表</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>友情链接管理</h2>
     <ul style="display:none">
