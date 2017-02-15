@@ -41,7 +41,8 @@ use yii\helpers\Url;
     <ul style="display:none">
 
         <li><a href="<?php echo Url::toRoute(['order/index']);?>"><span class="icon-caret-right"></span>未支付订单列表</a></li>
-        <li><a href="<?php echo Url::toRoute(['order/historylist']);?>"><span class="icon-caret-right"></span>历史订单</a></li>
+        <li><a href="<?php echo Url::toRoute(['order/orderadd']);?>"><span class="icon-caret-right"></span>订单添加</a></li>
+        <li><a href="<?php echo Url::toRoute(['order/historylist']);?>"><span class="icon-caret-right"></span>发货订单</a></li>
         <li><a href="<?php echo Url::toRoute(['order/exitlist']);?>"><span class="icon-caret-right"></span>退款申请列表</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>售后管理</h2>
@@ -77,6 +78,12 @@ use yii\helpers\Url;
 
         <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>已审核评论</a></li>
         <li><a href="<?php echo Url::toRoute(['classification/add']);?>"><span class="icon-caret-right"></span>未审核评论</a></li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>友情链接管理</h2>
+    <ul style="display:none">
+
+        <li><a href="<?php echo Url::toRoute(['friendlink/addlist']);?>"><span class="icon-caret-right"></span>添加友情链接</a></li>
+        <li><a href="<?php echo Url::toRoute(['friendlink/index']);?>"><span class="icon-caret-right"></span>友情链接列表</a></li>
     </ul>
     <h2><span class="icon-user"></span>权限管理</h2>
     <ul style="display:none">

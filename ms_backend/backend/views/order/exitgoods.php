@@ -25,8 +25,11 @@ use yii\base;
     <div class="padding border-bottom">
       <ul class="search">
         <li>
+          <input id="mpass" class="input w50" name="orderSn" size="50" placeholder="请输入订单号码" data-validate="required:请输入订单号码" type="text">
+          <button class="button bg-main icon-check-square-o" type="button" id="searchResult"> 查询</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
-          <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+          <button type="button" class="button border-red" id="allDel"><span class="icon-trash-o"></span> 批量删除</button>
         </li>
       </ul>
     </div>
@@ -47,14 +50,14 @@ use yii\base;
           <td><?php echo $val['goods_name']?></td>  
           <td><?php echo $val['apply_time']?></td>
           <td>
-              <div class="field">
-                <select class="input w50" name="cid">
+              <div class="field"> 
+                <select class="input w50" if()   obt="<?php echo $val['exit_id']?>" name="cid" id="exitresult">
                   <option value="">请审核此退货</option>
-                  <option value="">审核通过</option>
-                  <option value="">产品有损耗，不通过</option>
-                  <option value="">产品信息与实际不符合</option>
-
+                  <option value="1" <?php if($val['exit_status']==1){ echo "selected"; } ?>>审核通过</option>
+                  <option value="2" <?php if($val['exit_status']==2){ echo "selected"; } ?>>产品有损耗，不通过</option>
+                  <option value="3" <?php if($val['exit_status']==3){ echo "selected"; } ?>>产品信息与实际不符合</option>
                 </select>
+                <button type="button" class="buttons border-red" name="delOne" btn="<?php echo $val['exit_id']?>"><span class="icon-trash-o"></span>删除</button>
                 <div class="tips" title=""></div>
               </div>
           </td>
@@ -97,7 +100,52 @@ $("#checkall").click(function(){
 		return false;
 	}
 }*/
+$("#allDel").click(function(){
+  var str = new string();
+  $("input[name='id[]']").each(function(){
 
+  })
+})
+
+$(".input").change(function(){
+  var t = confirm('确定修改状态?');
+  if(t==true)
+  {
+    var v = $(this).val();
+    var id = $(this).attr('obt');
+    $.ajax({
+      url:"?r=order/updatestatus",
+      data:"v="+v+'&id='+id,
+      success:function(msg){
+        if(msg=='successupdate'){
+          alert('修改状态成功');
+        }else{
+          alert('修改状态失败');
+        }
+      }
+    })
+  }else{
+    return false;
+  }
+})
+  $(".buttons").click(function(){
+    var id = $(this).attr('btn');
+    
+    $.ajax({
+      var _this = $(this);
+      url:"?r=order/exitdelete",
+      data:"id="+id,
+      success:function(msg)
+      {
+        if(msg==successdelgoods)
+        { 
+          _this.parents('tr').remove();
+        }else{
+          alert('删除失败');
+        }
+      }
+    })
+  });
 </script>
 <script>
     

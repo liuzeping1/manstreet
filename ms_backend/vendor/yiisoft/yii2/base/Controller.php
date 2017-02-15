@@ -36,13 +36,10 @@ class Controller extends Component implements ViewContextInterface
      */
     const EVENT_AFTER_ACTION = 'afterAction';
 
-    /**
-     * @var string the ID of this controller.
+    /** @var string the ID of this controller.
      */
     public $id;
-    /**
-     * @var Module $module the module that this controller belongs to.
-     */
+    /** @var Module $module the module that this controller belongs to. */
     public $module;
     /**
      * @var string the ID of the action that is used when the action ID is not specified
