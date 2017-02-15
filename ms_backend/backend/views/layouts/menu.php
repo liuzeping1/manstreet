@@ -24,7 +24,7 @@ use yii\helpers\Url;
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
     <h2><span class="icon-pencil-square-o"></span>商品管理</h2>
     <ul style="display:none">
-        <li><a href="<?php echo Url::toRoute(['goods/index']);?>"><span class="righticon-caret-"></span>商品展示</a></li>
+        <li><a href="<?php echo Url::toRoute(['goods/index']);?>"><span class="icon-caret-right"></span>商品展示</a></li>
         <li><a href="<?php echo Url::toRoute(['goods/show']);?>"><span class="icon-caret-right"></span>添加商品</a></li>
         <li><a href="<?php echo Url::toRoute(['goodsattr/type']);?>"><span class="icon-caret-right"></span>商品类型</a></li>
         <li><a href="<?php echo Url::toRoute(['recycle/index']);?>"><span class="icon-caret-right"></span>回收站</a></li>
@@ -45,11 +45,6 @@ use yii\helpers\Url;
         <li><a href="<?php echo Url::toRoute(['order/orderadd']);?>"><span class="icon-caret-right"></span>订单添加</a></li>
         <li><a href="<?php echo Url::toRoute(['order/historylist']);?>"><span class="icon-caret-right"></span>发货订单</a></li>
         <li><a href="<?php echo Url::toRoute(['order/exitlist']);?>"><span class="icon-caret-right"></span>退款申请列表</a></li>
-    </ul>
-    <h2><span class="icon-pencil-square-o"></span>售后管理</h2>
-    <ul style="display:none">
-
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>售后服务列表</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>文章管理</h2>
     <ul style="display:none">
