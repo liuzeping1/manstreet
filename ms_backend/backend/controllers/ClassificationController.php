@@ -24,7 +24,7 @@ class ClassificationController extends CommonController
     {
         $fication=new Man_category();
         $arr=$fication->find();
-        $pages = new Pagination(['totalCount' => $arr->count(), 'pageSize'   => 3]);
+        $pages = new Pagination(['totalCount' => $arr->count(), 'pageSize'   => 5]);
         $models = $arr->offset($pages->offset)->limit($pages->limit)->all();
         return $this->render('add',['name'=>$models,'pages'=>$pages]);
     }

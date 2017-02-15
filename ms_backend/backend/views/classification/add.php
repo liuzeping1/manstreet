@@ -39,14 +39,12 @@ use yii\widgets\LinkPager;
         <?php foreach($name as $key=>$value){?>
         <tr>
             <?php if($value['is_show']==1){?>
-            <?php if($value['that_id']==0){?>
             <th width="10%"><?php echo $value['cat_id']?></th>
             <th width="10%"><?php echo $value['cat_name']?></th>
             <td class="f_sort" si="0"  id="<?php echo $value['cat_id']?>"><?php echo $value['sort']?></td>
             <td><div class="button-group"> <a class="button border-main" href="cateedit.html"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(<?php echo $value['cat_id']?>)"><span class="icon-trash-o" ></span> 删除</a> </div></td>
             <?php }?>
         </tr>
-        <?php }?>
         <?php }?>
         <tr>
             <td colspan="8"><div class="pagelist">      <?php

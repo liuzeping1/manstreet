@@ -24,8 +24,9 @@ use yii\helpers\Url;
     <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
     <h2><span class="icon-pencil-square-o"></span>商品管理</h2>
     <ul style="display:none">
-        <li><a href="<?php echo Url::toRoute(['goods/index']);?>"><span class="icon-caret-right"></span>商品展示</a></li>
+        <li><a href="<?php echo Url::toRoute(['goods/index']);?>"><span class="righticon-caret-"></span>商品展示</a></li>
         <li><a href="<?php echo Url::toRoute(['goods/show']);?>"><span class="icon-caret-right"></span>添加商品</a></li>
+        <li><a href="<?php echo Url::toRoute(['goodsattr/type']);?>"><span class="icon-caret-right"></span>商品类型</a></li>
         <li><a href="<?php echo Url::toRoute(['recycle/index']);?>"><span class="icon-caret-right"></span>回收站</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>分类管理</h2>
@@ -63,9 +64,7 @@ use yii\helpers\Url;
     </ul>
     <h2><span class="icon-pencil-square-o"></span>形象设计管理</h2>
     <ul style="display:none">
-
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>预约管理</a></li>
-        <li><a href="<?php echo Url::toRoute(['bowen/index']);?>"><span class="icon-caret-right"></span>订单详情</a></li>
+        <li><a href="?r=design/index&status=3&keywords="><span class="icon-caret-right"></span>订单详情</a></li>
     </ul>
     <h2><span class="icon-pencil-square-o"></span>活动管理</h2>
     <ul style="display:none">
