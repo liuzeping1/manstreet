@@ -1,3 +1,9 @@
+<?php
+use yii\widgets\ActiveForm;
+use yii\helpers\Url;
+use yii\helpers\Html;
+use yii\widgets\LinkPager;
+?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -12,15 +18,25 @@
     <script src="js/pintuer.js"></script>
 </head>
 <body>
-<form method="post" action="" id="listform">
+
     <div class="panel admin-panel">
         <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
         <div class="padding border-bottom">
             <ul class="search" style="padding-left:10px;">
                 <li> <a class="button border-main icon-plus-square-o" href="?r=goodsattr/type_add"> 添加类型</a> </li>
-                <li>
-                    <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
-                    <a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+                <?php
+
+                $form=ActiveForm::begin([
+                    'action'=>Url::toRoute(['goodsattr/type']),
+                    'method'=>'get',
+                    'class'=>'forms'
+                ]);
+                echo Html::input('text', 'cat_name', '', ['class' =>'input']);
+                echo Html::style('.input { width:250px; line-height:17px;display:inline-block }');
+                echo Html::submitButton('搜索', ['class' => 'button border-main icon-search']);
+                ActiveForm::end();
+                ?>
+
             </ul>
         </div>
         <table class="table table-hover text-center">
@@ -38,18 +54,24 @@
                     <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" /><?php echo $value['cat_goods_id']?>
                     <td><?php echo $value['cat_name']?></td>
                     <td><?php echo $value['attr_group']?></td>
-                    <td>2</td>
+                    <td><?php echo $value['shu']?></td>
                     <td><div class="button-group"> <a class="button border-main" href="?r=goodsattr/attr&cat_goods_id=<?php echo $value['cat_goods_id']?>"><span class="icon-edit"></span> 查看属性</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                 </tr>
 
                 <?php }?>
 
                 <tr>
-                    <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+                    <td colspan="8"><div class="pagelist">      <?php
+
+                            echo LinkPager::widget([
+                                'pagination' => $pages,
+                            ]);
+                            ?> </div></td>
                 </tr>
+
         </table>
     </div>
-</form>
+
 <script type="text/javascript">
 
     //搜索

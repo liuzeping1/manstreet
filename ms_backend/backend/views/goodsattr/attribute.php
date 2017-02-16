@@ -1,3 +1,9 @@
+<?php
+use yii\widgets\ActiveForm;
+use yii\helpers\Url;
+use yii\helpers\Html;
+use yii\widgets\LinkPager;
+?>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -63,13 +69,18 @@
                         </td>
 
                         <td><?php echo $value['attr_values']?></td>
-                        <td><div class="button-group"> <a class="button border-main" href="add.html"><span class="icon-edit"></span> 查看属性</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+                        <td><div class="button-group"><a class="button border-red" href="javascript:void(0)" onclick="return del(<?php echo $value['attr_id']?>)"><span class="icon-trash-o"></span> 删除</a> </div></td>
                     </tr>
             <?php }?>
 
 
                 <tr>
-                    <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+                    <td colspan="8"><div class="pagelist">      <?php
+
+                            echo LinkPager::widget([
+                                'pagination' => $page,
+                            ]);
+                            ?> </div></td>
                 </tr>
         </table>
     </div>
@@ -83,9 +94,15 @@
     })
 
     //单个删除
-    function del(id,mid,iscid){
+    function del(attr_id,mid,iscid){
         if(confirm("您确定要删除吗?")){
-
+            var url="?r=goodsattr/delete";
+            $.get(url,{attr_id:attr_id},function (mms){
+                if(mms)
+                {
+                    location.reload();
+                }
+            })
         }
     }
 
