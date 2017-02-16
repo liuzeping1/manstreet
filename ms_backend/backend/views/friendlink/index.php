@@ -27,7 +27,7 @@ use yii\base;
         <li>
           <a class="button border-main" href="?r=friendlink/addlist"><span class="icon-edit"></span>增加</a>
           <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
-          <button type="submit" class="button border-red"><span class="icon-trash-o"></span> 批量删除</button>
+          <button type="button" class="button border-red" id="delall"><span class="icon-trash-o"></span> 批量删除</button>
         </li>
       </ul>
     </div>
@@ -42,13 +42,13 @@ use yii\base;
           </tr>
           <?php foreach($result as $k =>$val) { ?>
           <tr>
-            <th width="5%"><input type="checkbox" name="id[]" value="<?php echo $val['link_id']?>"></th>
+            <th width="5%"><input type="checkbox" name="id[]" class="delid" value="<?php echo $val['link_id']?>"></th>
             <th><?php echo $val['link_id']?></th>
             <th width="10%"><?php echo $val['link_name']?></th>
             <th><a href="<?php echo $val['link_url']?>"><?php echo $val['link_url']?></a></th>
             <th><img width="200px" height="100px" src="<?php echo $val['link_img']?>" alt=""></th>
             <th width="25%">
-              <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 修改</button>
+              <a class="button border-main" href="?r=friendlink/dataupdate&id=<?php echo $val['link_id']?>"><span class="icon-edit"></span>修改</a>
               <a class="button border-main" href="?r=friendlink/adddel&id=<?php echo $val['link_id']?>"><span class="icon-edit"></span>删除</a>
             </th>
           </tr>
@@ -72,6 +72,39 @@ $("#checkall").click(function(){
   });
 })
 
+$("#delall").click(function(){
+    var checkedNum=$("input[name='id[]']:checked").length;
+    if(checkedNum==0)
+    {
+        alert("请至少选择一项!");
+        return false;
+    }
+    if(confirm('确定要删除所选的项目?'))
+    {
+        var che=$("input[name='id[]']:checked");
+        var hh = new Array();
+        for(var a=0;a<che.length;a++)
+        {
+            hh[a]=che[a].value;
+        }
+    }
+    $.ajax({
+        url:"?r=friendlink/deletebyquery",
+        data:"hh="+hh,
+        success:function(msg)
+        {
+            if(msg=='success')
+            {
+                alert('删除成功');
+                window.history.go(0);
+            }
+            else
+            {
+                alert('删除失败');
+            }
+        }
+    })
+})
 /*function DelSelect(){
     var Checkbox=false;
      $("input[name='id[]']").each(function(){
