@@ -85,7 +85,7 @@ class GoodsController extends CommonController
         $name=$upload->getInstanceByName('goods_img'); //获取文件原名称
         $img=$_FILES['goods_img']; //获取上传文件参数
         $upload->tempName=$img['tmp_name']; //设置上传的文件的临时名称
-        $img_path='uploads/'.$name; //设置上传文件的路径名称(这里的数据进行入库)
+        $img_path='../../../img/'.$name; //设置上传文件的路径名称(这里的数据进行入库)
         $upload->saveAs($img_path); //保存文件、
         //添加分类名称
         $man_goods=new Man_goods();
@@ -102,7 +102,7 @@ class GoodsController extends CommonController
         $man_goods->is_on_sale=$te['is_on_sale'];
         $man_goods->goods_brief=$te['goods_brief'];
         $man_goods->goods_desc=$te['goods_desc'];
-        $man_goods->goods_img=$img_path;
+        $man_goods->goods_img='../../img/'.$name;
         //判断是否促销
         if($te['is_promote']==1)
         {
@@ -114,50 +114,62 @@ class GoodsController extends CommonController
 
             if($list)
             {
-                $map=[];
-                foreach($te['attr_id'] as $k => $v){
-                    $map[]= ['attr_id'=>$v,'attr_value'=>trim($te['attr_name'][$k]),'goods_attr_id'=>$te['goods_attr_id']];
-                }
-                $values = '';
-                foreach($map as $key=>$value)
+                if(!empty($te['attr_id']))
                 {
-                    $values .= "(";
-                    $values .= "'$goods_id','$value[attr_id]','$value[attr_value]'),";
-
-
+                    $map=[];
+                    foreach($te['attr_id'] as $k => $v){
+                        if(isset($te['attr_name'][$k])){
+                            foreach($te['attr_name'][$k] as $key => $val){
+                                $map[]= ['attr_id'=>$v,'attr_value'=>trim($val),'goods_id'=>$goods_id];
+                            }
+                        }
+                    }
+                    if($map){
+                        $values = '';
+                        foreach($map as $key=>$value)
+                        {
+                            $values .= "(";
+                            $values .= "'$goods_id','$value[attr_id]','$value[attr_value]'),";
+                        }
+                        $values = rtrim($values,',');
+                        $sql="insert into man_good_attr (goods_id,attr_id,attr_value) VALUES $values";
+                        $powerl=\Yii::$app->db->createCommand($sql)->execute();
+                    }
                 }
-                $values = rtrim($values,',');
-                $sql="insert into man_good_attr (goods_id,attr_id,attr_value) VALUES $values";
-                $powerl=\Yii::$app->db->createCommand($sql)->execute();
-                if($powerl)
-                {
-                    return $this->redirect('?r=goods/index');
-                }
+
+                return $this->redirect('?r=goods/index');
+
             }
         }
         else
         {
             $list=$man_goods->save();
             $goods_id=\Yii::$app->db->getLastInsertID();
+
             if($list)
             {
+
                 $map=[];
                 foreach($te['attr_id'] as $k => $v){
-                    $map[]= ['attr_id'=>$v,'attr_value'=>trim($te['attr_name'][$k]),'goods_attr_id'=>$te['goods_attr_id']];
+                    if(isset($te['attr_name'][$k])){
+                        foreach($te['attr_name'][$k] as $key => $val){
+                            $map[]= ['attr_id'=>$v,'attr_value'=>trim($val),'goods_id'=>$goods_id];
+                        }
+                    }
                 }
-                $values = '';
-                foreach($map as $key=>$value)
-                {
-                    $values .= "(";
-                    $values .= "'$goods_id','$value[attr_id]','$value[attr_value]'),";
+                if($map){
+                    $values = '';
+                    foreach($map as $key=>$value)
+                    {
+                        $values .= "(";
+                        $values .= "'$goods_id','$value[attr_id]','$value[attr_value]'),";
+                    }
+                    $values = rtrim($values,',');
+                    $sql="insert into man_good_attr (goods_id,attr_id,attr_value) VALUES $values";
+                    $powerl=\Yii::$app->db->createCommand($sql)->execute();
                 }
-                $values = rtrim($values,',');
-                $sql="insert into man_good_attr (goods_id,attr_id,attr_value) VALUES $values";
-                $powerl=\Yii::$app->db->createCommand($sql)->execute();
-                if($powerl)
-                {
-                    return $this->redirect('?r=goods/index');
-                }
+                return $this->redirect('?r=goods/index');
+
             }
         }
 

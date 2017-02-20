@@ -32,9 +32,9 @@ use yii\widgets\LinkPager;
         <?php foreach($res as $k=>$v) :?>
         <tr>
             <td><?php echo $v['bum_id']?></td>
-            <td><?php echo $v['img_id']?></td>
+            <td><?php echo $v['goods_id']?></td>
             <td><?php echo $v['img']?></td>
-            <td><img src="<?php echo $v['img_path']?>" style="width: 100px"/></td>
+            <td><img src="../<?php echo $v['img_path']?>" style="width: 100px"/></td>
             <td><div class="button-group"> <a class="button border-main" href="cateedit.html"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" id="del" ids="<?php echo $v['bum_id']?>"><span class="icon-trash-o"></span> 删除</a> </div></td>
         </tr>
         <?php endforeach?>

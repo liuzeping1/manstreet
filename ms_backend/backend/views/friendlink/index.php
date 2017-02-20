@@ -46,7 +46,7 @@ use yii\base;
             <th><?php echo $val['link_id']?></th>
             <th width="10%"><?php echo $val['link_name']?></th>
             <th><a href="<?php echo $val['link_url']?>"><?php echo $val['link_url']?></a></th>
-            <th><img width="200px" height="100px" src="<?php echo $val['link_img']?>" alt=""></th>
+            <th><img width="200px" height="100px" src="../<?php echo $val['link_img']?>" alt=""></th>
             <th width="25%">
               <a class="button border-main" href="?r=friendlink/dataupdate&id=<?php echo $val['link_id']?>"><span class="icon-edit"></span>修改</a>
               <a class="button border-main" href="?r=friendlink/adddel&id=<?php echo $val['link_id']?>"><span class="icon-edit"></span>删除</a>

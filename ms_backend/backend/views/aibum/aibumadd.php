@@ -18,8 +18,8 @@
         <form method="post" class="form-x" action="?r=aibum/aibumadd" enctype="multipart/form-data">
             <table class="table">
                 <tr>
-                    <td>用户ID</td>
-                    <td><input type="text" name="img_id"/></td>
+                    <td>商品ID</td>
+                    <td><input type="text" name="goods_id"/></td>
                 </tr>
             <tbody id="addTr">
                 <tr>
