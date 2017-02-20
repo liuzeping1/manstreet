@@ -15,12 +15,13 @@
 </head>
 <body>
 <div class="panel admin-panel">
-    <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加内容</strong></div>
+    <form method="post" class="form-x" action="?r=goods/add" enctype="multipart/form-data">
+        <li>
+        <a class="button border-main icon-plus-square-o" id="nature"> 商品添加</a>
+        <button type="button" class="button border-yellow" id="nature2"><span class="icon-plus-square-o"></span> 添加属性</button>
+        </li>
+    <div class="body-content"  id="content">
 
-    <div class="body-content">
-
-
-        <form method="post" class="form-x" action="?r=goods/add" enctype="multipart/form-data">
                         <div class="form-x">
                             <div class="form-group">
                                 <div class="label">
@@ -28,7 +29,7 @@
                                 </div>
                                 <div class="field">
 
-                                    <select name="cat_id" >
+                                    <select name="cat_id" style="width:230px;height: 40px;" >
                                       <?php foreach ($name as $k=>$v){?>
                                             <option value="<?php echo $v['cat_id']?>"><?php echo $v['cat_name']?></option>
                                         <?php }?>
@@ -175,24 +176,72 @@
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <div class="label">
-                    <label></label>
-                </div>
-                <div class="field">
-                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
-                </div>
+                            <div class="form-group">
+                                <div class="label">
+                                    <label></label>
+                                </div>
+                                <div class="field">
+                                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+                                </div>
+                            </div>
+
+
+    </div>
+
+
+
+        </div>
+    <div class="body-content" style="display:none;"id="content1">
+        <div class="form-group">
+            <div class="label">
+                <label>商品属性：</label>
             </div>
+            <div class="field">
+                <select name="goods_attr_id" style="width:230px;height: 40px;" id="attr_id">
+                    <option>请选择商品属性</option>
+                    <?php foreach ($type as $kk=>$vv){?>
+                        <option value="<?php echo $vv['cat_goods_id']?>"><?php echo $vv['cat_name']?></option>
+                    <?php }?>
+                </select>
 
-    </div>
+            </div>
+            <div id="box"></div>
+        </div>
+        <div class="form-group">
+            <div class="label">
+                <label></label>
+            </div>
+            <div class="field">
+                <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+            </div>
+        </div>
+        </div>
+
     </form>
-
-
-    </div>
 
 </div>
 <script type="text/javascript">
+    //商品属性类型
+    $(function(){
+        $(document).on('change','#attr_id',function(){
+            var attr_id = $(this).val();
+            var url = "?r=goods/type";
+            $.get(url,{'attr_id':attr_id},function(msg){
+                $('#box').html(msg);
+            })
+        })
+    })
+    //属性切换
+    $('#nature').click(function(){
 
+        $('#content').show();
+    })
+    $('#nature2').click(function(){
+
+        $('#content1').show();
+        $('#content').hide();
+    })
+    //促销
     $('#is_promote').click(function(){
 
         var is_promote=$("[name='is_promote']:checked").val();
@@ -206,21 +255,6 @@
             $('#form-group').hide();
         }
     })
-//    $('#sbt').click(function(){
-//        var goods_name=$("[name='goods_name']").val();
-//        var goods_price=$("[name='goods_price']").val();
-//        var goods_number=$("[name='goods_number']").val();
-//        var goods_sn=$("[name='goods_sn']").val();
-//        var add_time=$("[name='add_time']").val();
-//        var sort=$("[name='sort']").val();
-//        //是否热销
-//        var is_hot=$("[name='is_hot']:checked").val();
-//        //是否在售
-//        var is_on_sale=$("[name='is_on_sale']:checked").val();
-//        //商品图片
-//        var goods_img=$("[name='goods_img']:checked").val();
-//        alert(goods_img);
-//    })
     //实例化编辑器
     //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
     var ue = UE.getEditor('editor');

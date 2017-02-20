@@ -53,6 +53,7 @@ use yii\widgets\LinkPager;
                 <th width="25%">操作</th>
             </tr>
             <?php foreach($name as $k=>$v){?>
+               <?php if($v['is_delete']==0){?>
                 <tr>
                     <th width="10%"><?php echo $v['goods_id']?></th>
                     <th width="10%"><?php echo $v['goods_name']?></th>
@@ -80,6 +81,7 @@ use yii\widgets\LinkPager;
                     <td><div class="button-group"> <a class="button border-main" href="?r=goods/upt&goods_id=<?php echo $v['goods_id']?>"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(<?php echo $v['goods_id']?>)"><span class="icon-trash-o" ></span> 删除</a> </div></td>
 
                 </tr>
+                <?php }?>
             <?php }?>
             <tr>
                 <td colspan="8"><div class="pagelist">      <?php
