@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
     <title></title>
+    <script type="text/javascript" charset="utf-8" src="utf8-php/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="utf8-php/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="utf8-php/lang/zh-cn/zh-cn.js"></script>
     <link rel="stylesheet" href="css/pintuer.css">
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>
@@ -63,7 +68,7 @@
                     <label>文章内容：</label>
                 </div>
                 <div class="field">
-                    <textarea name="content" value="<?php echo $res['content']?>" class="input" style="height:450px; border:1px solid #ddd;"></textarea>
+                    <script id="editor" type="text/plain" style="width:1024px;height:500px;" name="content"></script>
                     <div class="tips"></div>
                 </div>
             </div>
@@ -75,5 +80,7 @@
     </form>
 </div>
 </div>
-
+<script>
+    var ue = UE.getEditor('editor');
+</script>
 </body></html>
