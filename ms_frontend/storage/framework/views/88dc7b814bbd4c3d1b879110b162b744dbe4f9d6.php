@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
             </div>
             <div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s" style="margin-left: 200px;">
-                <a href="single.html">结算 <b>》</b></a>
+                <a href="single.html">去结算 <b>》</b></a>
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -108,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //checkout -->
 <!-- footer -->
-<?php echo $__env->make('manstreet.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+<?php echo $__env->make('manstreet.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <!-- //footer -->
 </body>
 </html>

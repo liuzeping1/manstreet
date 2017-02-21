@@ -22,7 +22,7 @@
         <div class="products-right-grids-position animated wow slideInRight" data-wow-delay=".5s">
             <img src="images/18.jpg" alt=" " class="img-responsive" />
             <div class="products-right-grids-position1">
-                <h4>2016 New Collection</h4>
+                <h4>2017 最新产品</h4>
                 <p>Temporibus autem quibusdam et aut officiis debitis aut rerum
                     necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
                     non recusandae.</p>

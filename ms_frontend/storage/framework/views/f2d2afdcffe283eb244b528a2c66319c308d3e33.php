@@ -72,7 +72,7 @@ $article = DB::table('man_article')->where('is_show','1')->get();
             <h2><a href="index.html">男人街 <span>Man Street</span></a></h2>
         </div>
         <div class="copy-right animated wow slideInUp" data-wow-delay=".5s">
-            <p>Copyright &copy; 2016.Company name All rights reserved.</p>
+            <!--<p>Copyright &copy; 2016.Company name All rights reserved.</p>-->
         </div>
     </div>
 </div>

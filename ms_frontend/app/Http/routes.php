@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/','ManstreetController@index');
 //主页
 Route::get('index','ManstreetController@index');
 //登录

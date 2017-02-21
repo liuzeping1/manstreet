@@ -18,6 +18,9 @@ class CenterController extends Controller
     {
         $session = new Session();
         $users = $session->get('users');
+        if(!$users){
+            echo "<script>alert('请先登录');history.go(-1)</script>";
+        }
         $center = new Center();
         $centerShow = $center->personalList($users['user_id']);
 

@@ -16,7 +16,7 @@ class CartController extends Controller
         $session = new Session();
         $users = $session->get('users');
         if(!$users['user_id']){
-            echo "<script>alert('请先登录');location.href='login'</script>";
+            echo "<script>alert('请先登录');history.go(-1)</script>";
         }
         $cart_list = DB::table('man_cart')
             ->leftJoin('man_goods', 'man_cart.goods_id', '=', 'man_goods.goods_id')

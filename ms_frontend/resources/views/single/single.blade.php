@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>商品详情页面</title>
+    <title>《男人街》极简潮流生活馆</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -167,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="clearfix"> </div>
                 </div>
                 <div class="occasional">
-                    <h5>分享 :</h5>
+                    <h5>支持 :</h5>
 
                     <div class="colr">
                         <label class="radio"><input type="radio" name="radio"><i></i>免运费</label>
@@ -183,10 +183,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="social-right">
                         <ul class="social-icons">
-                            <li><a href="#" class="facebook"></a></li>
-                            <li><a href="#" class="twitter"></a></li>
-                            <li><a href="#" class="g"></a></li>
-                            <li><a href="#" class="instagram"></a></li>
+                            <li><a href="javascript:void(0)" class="facebook"></a></li>
+                            <li><a href="javascript:void(0)" class="twitter"></a></li>
+                            <li><a href="javascript:void(0)" class="g"></a></li>
+                            <li><a href="javascript:void(0)" class="instagram"></a></li>
                         </ul>
                     </div>
                     <div class="clearfix"> </div>
@@ -293,10 +293,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <?php foreach($data as $key=>$value){?>
                 <div class="new-collections-grid1 animated wow slideInLeft" data-wow-delay=".8s">
                     <div class="new-collections-grid1-image">
-                        <a href="single.html" class="product-image"><img src="<?php echo $value
+                        <a href="single?goods_id=<?php echo $value['goods_id'] ?>" class="product-image"><img src="<?php echo $value
                             ['goods_img']?>" alt=" " class="img-responsive"></a>
                         <div class="new-collections-grid1-image-pos">
-                            <a href="single.html">查看详情</a>
+                            <a href="single?goods_id=<?php echo $value['goods_id'] ?>">查看详情</a>
                         </div>
                         <div class="new-collections-grid1-right">
                             <div class="rating">
@@ -320,12 +320,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
 
-                    <h4><a href="single.html"><?php echo $value['goods_name']?></a></h4>
+                    <h4><a href="single?goods_id=<?php echo $value['goods_id'] ?>"><?php echo $value['goods_name']?></a></h4>
 
                     <p>商品名称</p>
                     <div class="new-collections-grid1-left simpleCart_shelfItem">
                         <p> <span class="item_price"><?php echo $value['goods_price']?></span><a
-                                    class="item_add" href="javascript:void (0)" id="into_cart">加入购物车 </a></p>
+                                    class="item_add" href="single?goods_id=<?php echo $value['goods_id'] ?>" >产品详情 </a></p>
                     </div>
 
                 </div>

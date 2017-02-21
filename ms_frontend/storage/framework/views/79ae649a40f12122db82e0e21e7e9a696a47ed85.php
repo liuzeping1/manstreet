@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>《男人街》极简潮流生活馆</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,8 +43,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="banner">
     <div class="container">
         <div class="banner-info animated wow zoomIn" data-wow-delay=".5s">
-            <h3>免费在线购物</h3>
-            <h4>Up to <span>50% <i>Off/-</i></span></h4>
+            <h3>最Man的购物街</h3>
+            <h4>折扣 <span>50% <i>+</i></span></h4>
             <div class="wmuSlider example1">
                 <div class="wmuSliderWrapper">
                     <article style="position: absolute; width: 100%; opacity: 0;">
@@ -96,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <img src="images/1.jpg" alt=" " class="img-responsive" />
                     </div>
                     <div class="banner-bottom-grid-left1-pos">
-                        <p>Discount 45%</p>
+                        <p>简单舒适</p>
                     </div>
                 </div>
                 <div class="banner-bottom-grid-left-grid left1-grid grid-left-grid1">
@@ -165,7 +165,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="collections-bottom-grids">
             <div class="collections-bottom-grid animated wow slideInLeft" data-wow-delay=".5s">
-                <h3>45% Offer For <span>其实生活就是这么简单丶</span></h3>
+                <h3>极简生活 <span>其实生活就是这么简单丶</span></h3>
             </div>
         </div>
     </div>

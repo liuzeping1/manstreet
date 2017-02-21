@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <title>《男人街》极简潮流生活馆</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,8 +49,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- register -->
 <div class="register">
     <div class="container">
-        <h3 class="animated wow zoomIn" data-wow-delay=".5s">Welcome me！</h3>
-        <p class="est animated wow zoomIn" data-wow-delay=".5s">Welcome to register for men's street, thanks for our support.</p>
+        <h3 class="animated wow zoomIn" data-wow-delay=".5s">Man Street</h3>
+        <p class="est animated wow zoomIn" data-wow-delay=".5s">欢迎来到你的生活馆，请先注册！</p>
         <div class="login-form-grids">
             <h5 class="animated wow slideInUp" data-wow-delay=".5s">注册信息</h5>
             <form class="animated wow slideInUp" data-wow-delay=".5s" method="post" action="into" onsubmit="return check()">
