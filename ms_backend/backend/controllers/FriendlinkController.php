@@ -57,17 +57,12 @@ class FriendlinkController extends Controller
         $show_order= yii::$app->request->post('show_order');
 
         $image = UploadedFile::getInstanceByName('link_img');
-        $dir='uploads/'.date("YmdH",time()).'/';
-        if(!is_dir($dir))
-        {
-            mkdir($dir,'777');
-        }
         //var_dump($dir);die;
-        $name = $dir.$image->name; //文件名绝对路径
-        
+        $name = '../../../img/'.$image;//文件名绝对路径
+        $name1 = '../../img/'.$image;
         $status = $image->saveAs($name,true); //保存文件
         if ($status) {
-            $friendSql = "insert into man_friend_link(`link_name`,`link_url`,`show_order`,`link_img`)VALUES('$link_name','$link_url','$show_order','$name')";
+            $friendSql = "insert into man_friend_link(`link_name`,`link_url`,`show_order`,`link_img`)VALUES('$link_name','$link_url','$show_order','$name1')";
             $friendResult = yii::$app->db->createCommand($friendSql)->execute();
             if($friendResult)
             {

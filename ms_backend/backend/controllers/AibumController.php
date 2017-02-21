@@ -40,7 +40,7 @@ class AibumController extends CommonController
     //相册入库
     public function actionAibumadd()
     {
-        $data = \Yii::$app->request->post('img_id');
+        $data = \Yii::$app->request->post('goods_id');
 //        $file = $_FILES['img'];
         //循环处理数组
 //        $img = [];
@@ -54,7 +54,7 @@ class AibumController extends CommonController
 //        print_r($img);die;
         $upload = new Uploadfile();
         $type = array('image/gif', 'image/jpeg', 'image/png', 'image/pjpeg', 'image/x-png');
-        $upload->Uploadfile($_FILES['img'],'./upload/admin',10244457,$type);
+        $upload->Uploadfile($_FILES['img'],'../../img/',10244457,$type);
         $num = $upload->upload();
         if($num!=0) {
             $b_cover = $upload->getSaveInfo();
@@ -62,7 +62,7 @@ class AibumController extends CommonController
                 $res = \Yii::$app->db->createCommand()->insert('man_aibum',[
                     'img_path' => $v['newpath'],
                     'img' =>$v['name'],
-                    'img_id' =>$data,
+                    'goods_id' =>$data,
                 ])->execute();
             }
             if($b_cover)
