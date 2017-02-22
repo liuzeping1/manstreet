@@ -25,10 +25,12 @@ class CenterController extends Controller
         $centerShow = $center->personalList($users['user_id']);
 
         $address = DB::table("man_user_address")->limit(5)->get();
+        $orderList = DB::table("man_order_info")->where('user_id',$users['user_id'])->get();
         return view('center/center',[
             'centerShow'=>$centerShow,
             'list'=>$centerShow,
-         'addList'=>$address,
+            'addList'=>$address,
+            'orderList'=>$orderList,
         ]);
     }
 
@@ -41,7 +43,9 @@ class CenterController extends Controller
         $password = $center->password($pwd,$id);
         if($password)
         {
-            return redirect('login');
+            $session = new Session();
+            $session->remove('users');
+            echo "<script>alert('密码修改成功，请重新登录！');location.href='login'</script>";
         }else
         {
             alert('修改失败');

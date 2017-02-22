@@ -71,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //login -->
 <!-- footer -->
-@include('manstreet.footer');
+@include('manstreet.footer')
 <!-- //footer -->
 </body>
 </html>

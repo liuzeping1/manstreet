@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mail Us</title>
+    <title>《男人街》极简潮流生活馆</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -96,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             }
                             ?>
                             <hr/>
-                            注册时间：<?php echo $v['reg_time'] ?>
+                            注册时间：<?php echo date('Y-m-d',$v['reg_time']) ?>
                             <hr/>
                             邮箱:<?php echo $v['email'] ?>
                             <hr/>
@@ -110,30 +110,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <table class="table table-hover">
                                     <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
+                                        <th>订单号</th>
+                                        <th>收货人</th>
+                                        <th>订单状态</th>
+                                        <th>商品总价</th>
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach($orderList as $v): ?>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td><?php echo $v['order_sn'] ?></td>
+                                        <td><?php echo $v['consignee'] ?></td>
+                                        <td>
+                                            <?php if($v['shipping_status']==0){ echo '未发货'; }
+                                            else if($v['shipping_status']==1){ echo '配货中'; }
+                                            else if($v['shipping_status']==2){ echo '已发货'; }
+                                            else if($v['shipping_status']==3){ echo '运输中'; }
+                                            else if($v['shipping_status']==4){ echo '派件中'; }
+                                            else if($v['shipping_status']==5){ echo '已签收'; }
+                                            ?>
+                                        </td>
+                                        <td><?php echo $v['order_amount'] ?>&nbsp;RMB</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    <?php endforeach; ?>
                                     </tbody>
                                 </table>
                             </div>

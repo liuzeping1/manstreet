@@ -14,7 +14,7 @@ use yii\db\Query;
 /**
  * OrderController implements the CRUD actions for ManOrderInfoModel model.
  */
-class OrderController extends Controller
+class OrderController extends CommonController
 {
     public $enableCsrfValidation = false;
     public $layout = "menu";

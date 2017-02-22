@@ -23,8 +23,6 @@ Route::get('login','LoginController@login');
 Route::get('center','CenterController@center');
 //购物车
 Route::get('cart','CartController@cart');
-//确认订单
-Route::get('order','OrderController@order');
 //商品列表页
 Route::get('product','ProductController@product');
 //注册
@@ -61,6 +59,17 @@ Route::get('article','ArticleController@index');
 Route::post('singleCart','SingleController@singleCart');
 //删除购物车
 Route::post('cart_remove','CartController@cart_remove');
+
+//订单
+Route::any('order','OrderController@order');
+//订单生成页面
+Route::any('clearing','OrderController@clearing');
+//支付
+Route::any('pay','OrderController@pay');
+//同步
+Route::any('syn','OrderController@syn');
+//异步
+Route::any('asy','OrderController@asy');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

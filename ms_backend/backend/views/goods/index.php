@@ -62,13 +62,13 @@ use yii\widgets\LinkPager;
                     <th width="10%">
                         <?php
                         if($v['is_on_sale']==1){?>
-                            <img src="images/no.gif" >
+                            <img src="images/yes.gif" >
                         <?php  }else {  ?>
                             <img src="images/no.gif" >
                         <?php } ?>
 
                     </th>
-                    <th width="10%"><?php echo $v['add_time']?></th>
+                    <th width="10%"><?php echo date('Y-m-d',$v['add_time'])?></th>
                     <th width="10%"><?php echo $v['goods_sn']?></th>
                     <th width="10%"><?php
                         if($v['is_promote'] == 1){?>

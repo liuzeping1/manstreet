@@ -35,7 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 <!-- header -->
-@include('manstreet.top');
+@include('manstreet.top')
 <!-- //header -->
 <!-- breadcrumbs -->
 <div class="breadcrumbs">
@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
             </div>
             <div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s" style="margin-left: 200px;">
-                <a href="single.html">去结算 <b>》</b></a>
+                <a href="order">去结算 <b>》</b></a>
             </div>
             <div class="clearfix"> </div>
         </div>

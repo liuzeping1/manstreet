@@ -35,7 +35,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 <!-- header -->
-@include('manstreet/top');
+@include('manstreet/top')
 <!-- //header -->
 <!-- breadcrumbs -->
 <div class="breadcrumbs">
@@ -143,7 +143,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//breadcrumbs -->
 <!--footer -->
 @include('manstreet/footer')
-//footer
 </body>
 <script>
     $(".UpdateCate").click(function(){

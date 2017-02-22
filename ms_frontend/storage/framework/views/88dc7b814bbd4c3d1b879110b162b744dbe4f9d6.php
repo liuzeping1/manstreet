@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>购物车</title>
+    <title>《男人街》极简潮流生活馆</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </ul>
             </div>
             <div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s" style="margin-left: 200px;">
-                <a href="single.html">去结算 <b>》</b></a>
+                <a href="order">去结算 <b>》</b></a>
             </div>
             <div class="clearfix"> </div>
         </div>

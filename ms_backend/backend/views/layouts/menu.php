@@ -84,7 +84,7 @@ use yii\helpers\Url;
         <li><a href="<?php echo URL::toRoute(['rbac/role'])?>"><span class="icon-caret-right"></span>角色添加</a></li>
         <li><a href="<?php echo URL::toRoute(['rbac/rb'])?>"><span class="icon-caret-right"></span>角色分配权限</a></li>
         <li><a href="<?php echo URL::toRoute(['rbac/fenpei'])?>"><span class="icon-caret-right"></span>用户分配角色</a></li>
-        <li><a href="<?php echo URL::toRoute(['rbac/regisssster'])?>"><span class="icon-caret-right"></span>添加管理员</a></li>
+<!--        <li><a href="--><?php //echo URL::toRoute(['rbac/regisssster'])?><!--"><span class="icon-caret-right"></span>添加管理员</a></li>-->
         <!--    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>-->
         <!--    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>        -->
     </ul>
