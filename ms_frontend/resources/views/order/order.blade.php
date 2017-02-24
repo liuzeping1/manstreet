@@ -64,19 +64,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</thead>
 								<tbody>
 								@foreach($addressList as $addressKey)
-								<tr>
-									<td><input type="radio" name="address_id" value="<?php echo $addressKey['address_id'] ?>"></td>
-									<td><?php echo $addressKey['consignee'] ?></td>
-									<td>
-										<?php echo $addressKey['province'] ?>
-										<?php echo $addressKey['city'] ?>
-										<?php echo $addressKey['address'] ?>
-									</td>
-									<td>
-										<?php echo $addressKey['mobile'] ?>
-									</td>
+									<tr>
+										<td><input type="radio" name="address_id" value="<?php echo $addressKey['address_id'] ?>"></td>
+										<td><?php echo $addressKey['consignee'] ?></td>
+										<td>
+											<?php echo $addressKey['province'] ?>
+											<?php echo $addressKey['city'] ?>
+											<?php echo $addressKey['address'] ?>
+										</td>
+										<td>
+											<?php echo $addressKey['mobile'] ?>
+										</td>
 
-								</tr>
+									</tr>
 								@endforeach
 								</tbody>
 							</table>
@@ -85,6 +85,69 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</table>
 				</div>
 			</div>
+			<!--改动-->
+			<div class="grid_3 grid_4 animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<h3 class="hdg">添加收货人信息</h3>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="consignee" placeholder="收货人姓名" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="province" placeholder="收货人省份" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="city" placeholder="收货人市区" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="address" placeholder="详细地址" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="zipcode" placeholder="邮政编码" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<span class="input-group-addon" id="basic-addon1"></span>
+					<input type="text" class="form-control" id="mobile" placeholder="手机号码" aria-describedby="basic-addon1">
+				</div>
+				<div class="input-group animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<span style="float: left" id="add_into"><a href="javascript:void (0)"><span class="label label-warning">添加收货地址</span></a></span>
+				</div>
+			</div>
+			<script>
+				$(function(){
+					$(document).on('click','#add_into',function(){
+						var consignee = $('#consignee').val();
+						var province = $('#province').val();
+						var city = $('#city').val();
+						var address = $('#address').val();
+						var zipcode = $('#zipcode').val();
+						var mobile = $('#mobile').val();
+						$.ajax({
+							type:'post',
+							url:'add_into',
+							data:'consignee='+consignee+'&province='+province+ '&city='+city
+								+'&address='+address+'&zipcode='+zipcode+'&mobile='+mobile,
+							success:function(msg){
+								if(msg==0){
+									location.reload();
+								}else if(msg==1){
+									location.href='index'
+								}else if(msg==2){
+									alert('请先登录');
+									location.href='login'
+								}else{
+									alert('收货地址添加失败');
+									location.href='login'
+								}
+							}
+						})
+					})
+				})
+			</script>
+			<!-- 结束 -->
 			<div class="grid_3 grid_4 animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
 				<h3 class="hdg">配送方式</h3>
 				<div class="bs-example">
@@ -164,7 +227,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<td>&nbsp;</td>
 									<td></td>
 									<td>应付金额： <span class="PriceResult" value="{{$arr}}">{{$arr}}</span>元</td>
-									<td><span id="clearing" class="label label-success">去支付</span></td>
+									<td>
+										<span id="clearing" class="label label-success">去支付</span>
+									</td>
 								</tr>
 								</tbody>
 							</table>
@@ -184,12 +249,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script>
 	$("#clearing").click(function(){
 		var shippingway = $("input[name='way']:checked").val();
-		var address_id  = $("input[name='address_id']").val();
+		var address_id  = $("input[name='address_id']:checked").val();
 		var message = $("#message").val();
 		var zfb= $("#zfb").val();
 		var goods_amount = $(".PriceResult").attr('value');
 		//alert(goods_amount);die;
 		$.ajax({
+			type:'post',
 			url:"clearing",
 			data:"shippingway="+shippingway+"&zfb="+zfb+"&address_id="+address_id+"&message="+message+"&goods_amount="+goods_amount,
 			success:function(msg)

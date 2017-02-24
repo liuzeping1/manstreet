@@ -337,7 +337,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //single-related-products -->
 <!-- footer -->
-<?php echo $__env->make('manstreet.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>;
+<?php echo $__env->make('manstreet.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <script type="text/javascript">
     //第一个
     $(".for-div>div:first b").click(function(){

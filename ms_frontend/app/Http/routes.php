@@ -70,6 +70,8 @@ Route::any('pay','OrderController@pay');
 Route::any('syn','OrderController@syn');
 //异步
 Route::any('asy','OrderController@asy');
+//添加收货地址
+Route::any('add_into','CenterController@add_into');
 /*
 |--------------------------------------------------------------------------
 | Application Routes

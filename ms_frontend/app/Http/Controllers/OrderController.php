@@ -26,6 +26,9 @@ class OrderController extends Controller
         $shopCart = DB::table('man_cart')
                         ->where('man_cart.user_id',"$user_id")
                         ->get();
+        if(!$shopCart){
+            echo "<script>alert('购物车没有商品,快去选购吧！');location.href='product'</script>";die;
+        }
         $arr = '';
 
         foreach($shopCart as $key)
@@ -51,25 +54,12 @@ class OrderController extends Controller
         $message = $r->input("message");
         $goods_amount = $r->input('goods_amount');
         //查询用户的地址信息
-        $shippingList = DB::table('man_shipping')->where('shipping_id',"$shippingway")->get();
-        foreach($shippingList as $key)
-        {
-            $shipping_id = $key['shipping_id'];
-            $shipping_name= $key['shipping_name'];
-        }
+        $shippingList = DB::table('man_shipping')->where('shipping_id',$shippingway)->first();
+
         //dd($addressList);
         //查询用户的
         $order_sn = time().rand(100000,999999);
-        $address =     DB::table("man_user_address")->where("address_id","$address_id")->get();
-        foreach($address as $key)
-        {
-            $consignee = $key['consignee'];
-            $province  = $key['province'];
-            $city = $key['city'];
-            $addresss = $key['address'];
-            $zipcode = $key['zipcode'];
-            $mobile  = $key['mobile'];
-        }
+        $address = DB::table("man_user_address")->where("address_id",$address_id)->first();
 
         $insertId = DB::table('man_order_info')->insertGetId(
             array('order_sn' => $order_sn,
@@ -78,8 +68,8 @@ class OrderController extends Controller
                   'shipping_status' => 0,
                   'pay_status' => 0,
                   'message' => $message,
-                  'shipping_id' => $shipping_id,
-                  'shipping_name' => $shipping_name,
+                  'shipping_id' =>$shippingList['shipping_id'],
+                  'shipping_name' =>$shippingList['shipping_name'],
                   'pay_id' => 1,
                   'pay_name' => $zfb,
                   'goods_amount' => $goods_amount,
@@ -88,13 +78,13 @@ class OrderController extends Controller
                   'add_time' => date('Y-m-d H:i:s', time()),
                   'pay_time' => date('Y-m-d H:i:s', time()),
                   'shipping_time' => '',
-                  'consignee' => $consignee,
-                  'province' => $province,
-                  'city' => $city,
-                  'address' => $addresss,
-                  'zipcode' =>  $zipcode,
-                  'mobile' =>  $mobile
-                )
+                  'consignee' =>$address['consignee'],
+                  'province' =>$address['province'],
+                  'city' =>$address['city'],
+                  'address' =>$address['address'],
+                  'zipcode' =>$address['zipcode'],
+                  'mobile' =>$address['mobile']
+            )
         );
         if($insertId)
         {
@@ -130,6 +120,8 @@ class OrderController extends Controller
     //同步
     public function syn(Request $request)
     {
+        $session = new Session();
+        $users = $session->get('users');
         $result = $request->input();
         if($result['is_success']=='T'){
             $re = DB::table('man_order_info')->where('order_sn',$result['subject'])
@@ -139,6 +131,7 @@ class OrderController extends Controller
                     'pay_time'=>$result['notify_time']
                 ]);
             if($re){
+                DB::table('man_cart')->where('user_id',$users['user_id'])->delete();
                 echo "<script>alert('完成支付，返回首页');location.href='index'</script>";
             }else{
                 echo "<script>alert('支付状态修改失败，请联系客服');location.href='index'</script>";

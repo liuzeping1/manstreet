@@ -24,7 +24,7 @@ class CenterController extends Controller
         $center = new Center();
         $centerShow = $center->personalList($users['user_id']);
 
-        $address = DB::table("man_user_address")->limit(5)->get();
+        $address = DB::table("man_user_address")->where('user_id',$users['user_id'])->limit(5)->get();
         $orderList = DB::table("man_order_info")->where('user_id',$users['user_id'])->get();
         return view('center/center',[
             'centerShow'=>$centerShow,
@@ -94,6 +94,38 @@ class CenterController extends Controller
         }else
         {
             echo 0;
+        }
+    }
+    //添加地址
+    public function add_into(Request $request)
+    {
+        $session = new Session();
+        $users = $session->get('users');
+        if(!$users)
+        {
+            echo 2;
+        }
+        $data = $request->input();
+        if(!$data)
+        {
+            echo 1;
+        }
+        $re = DB::table('man_user_address')->insert([
+            'user_id'=>$users['user_id'],
+            'consignee'=>$data['consignee'],
+            'province'=>$data['province'],
+            'city'=>$data['city'],
+            'address'=>$data['address'],
+            'zipcode'=>$data['zipcode'],
+            'mobile'=>$data['mobile'],
+        ]);
+        if($re)
+        {
+            echo 0;
+        }
+        else
+        {
+            echo 3;
         }
     }
 
