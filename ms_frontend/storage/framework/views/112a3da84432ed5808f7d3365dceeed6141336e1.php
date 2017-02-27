@@ -61,6 +61,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			</div>
 		</div>
+		<!-- 补充 -->
+		<!--<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">-->
+		<center>
+			<div class="checkout-right-basket animated wow slideInRight" data-wow-delay=".5s">
+				<a href="order">去结算 <b>》</b></a>
+			</div>
+		</center>
+		<!--</div>-->
+    <!-- 补充 -->
+
+
 	</div>
 <!-- footer -->
 	<?php echo $__env->make('manstreet/footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

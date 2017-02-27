@@ -60,6 +60,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 			</div>
 		</div>
+		<!-- 补充 -->
+		<!--<div class="login-form-grids animated wow slideInUp" data-wow-delay=".5s">-->
+		<!--</div>-->
+    <!-- 补充 -->
+
+
 	</div>
 <!-- footer -->
 	@include('manstreet/footer')

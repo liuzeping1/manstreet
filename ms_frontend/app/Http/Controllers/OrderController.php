@@ -144,9 +144,23 @@ class OrderController extends Controller
     }
 
     //异步
-    public function asy()
+    public function asy(Request $request)
     {
-        echo "这是异步";
+        $data = $request->input();
+        $out_trade_no = $data['out_trade_no'];
+        $trade_status = $data['trade_status'];
+        $gmt_payment = $data['gmt_payment'];
+        $re = DB::table('man_order_info')->where('order_sn',$out_trade_no)->first();
+        if($re)
+        {
+            $res = DB::table('man_order_info')->where('order_sn',$out_trade_no)->update([
+                'pay_status'=>1,
+                'pay_time'=>$gmt_payment
+            ]);
+            if($res){
+                echo 'success';
+            }
+        }
     }
 
     function  order_pay($sn,$price)
